@@ -6,15 +6,15 @@ const Header = () => {
 			<div className="header__wrapper">
 				<h1 className="header__title">
 					<strong>
-						Hi, my name is <em>Arseniy</em>
+						Меня зовут <em>Арсений,</em>
 					</strong>
-					<br />a student TOP-academy
+					<br />я студент TOP-academy
 				</h1>
 				<div className="header__text">
-					<p>with passion for learning and creating.</p>
+					<p>это мое портфолио.</p>
 				</div>
 				<a href="https:vk.com" target="_blank" className="btn">
-					Свзяаться
+					Связаться
 				</a>
 			</div>
 		</header>

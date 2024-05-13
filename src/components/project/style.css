@@ -7,7 +7,22 @@
 
 .project__img {
 	border-radius: 10px;
-}
+	width: 370px;
+	height: 278px;
+	object-fit: cover;
+  }
+
+  .project__img-a {
+	width: 370px;
+	height: 278px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  
 
 .project__title {
 	padding: 15px 20px 25px;
