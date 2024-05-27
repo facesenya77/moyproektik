@@ -24,11 +24,11 @@ const Contacts = () => {
     };   
   
     const socialIcons = [  
-        { icon: FaTelegram, onClick: openTelegramChat },  
-        { icon: FaWhatsapp, onClick: openWhatsappChat },  
-        { icon: FaFacebook, onClick: openFacebook },  
-        { icon: FaInstagram, onClick: openInstagram },  
-        { icon: FaTwitter, onClick: openTwitter }  
+        { icon: FaTelegram, onClick: openTelegramChat, className: 'fatelegram' },  
+        { icon: FaWhatsapp, onClick: openWhatsappChat, className: 'fawhatsapp' },  
+        { icon: FaFacebook, onClick: openFacebook, className: 'fafacebook' },  
+        { icon: FaInstagram, onClick: openInstagram, className: 'fainstagram' },  
+        { icon: FaTwitter, onClick: openTwitter, className: 'fatwitter' }  
     ];  
   
     return (   
@@ -45,7 +45,7 @@ const Contacts = () => {
                                 onHoverStart={e => {}}   
                                 onHoverEnd={e => {}}  
                             >  
-                                <social.icon className="icon" onClick={social.onClick} />  
+                                <social.icon className={`icon ${social.className}`} onClick={social.onClick} />  
                             </motion.div>  
                         </motion.div>  
                     ))}  

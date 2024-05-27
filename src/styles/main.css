@@ -83,30 +83,56 @@ body {
     font-weight: bold;
 }
 
-.social-icons-container {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-    margin-top: 20px;
-}
+.social-icons-container { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	flex-wrap: wrap;  
+	margin-top: 20px; 
+  } 
+  
+  .icon { 
+	flex: 0 0 10%; 
+	font-size: 70px; 
+	margin: 70px 40px; 
+	cursor: pointer; 
+	color: #ffffff; 
+	transition: all 0.2s ease;
+  } 
+  
 
-.icon {
-	flex: 0 0 10%;
-    font-size: 70px;
-    margin: 70px 40px;
-    cursor: pointer;
-}
+  .icon:hover {
+	transition: all 0.3s ease;
+  }
+  
+  .fatelegram:hover {
+	color: #0088cc; 
+  }
 
-.icon:hover {
-    color: #007bff; 
-}
-
-.container {
-	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 1200px;
-}
+  .fawhatsapp:hover {
+	color: #25d366; 
+  }
+  
+  .fafacebook:hover {
+	color: #1877f2; 
+  }
+  
+  .fainstagram:hover {
+	background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); 
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: #c13584;
+  }
+  
+  .fatwitter:hover {
+	color: #00acee; /* Цвет для Twitter */
+  }
+  
+  .container { 
+	margin: 0 auto; 
+	padding: 0 15px; 
+	max-width: 1200px; 
+  }
 
 .none {
 	display: none !important;
