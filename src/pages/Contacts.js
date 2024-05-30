@@ -1,8 +1,11 @@
 import React from 'react';   
 import { FaTelegram, FaWhatsapp, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';   
 import { motion } from 'framer-motion';   
-  
+import detectDarkMode from '../utils/detectDarkMode';
+import {useLocalStorage} from "../utils/useLocalStorage";
+
 const Contacts = () => {   
+    const [darkMode, setDarkMode] = useLocalStorage('darkMode', detectDarkMode());
     const openTelegramChat = () => {   
         window.open('https://t.me/ssssnya', '_blank');   
     };   
@@ -45,7 +48,7 @@ const Contacts = () => {
                                 onHoverStart={e => {}}   
                                 onHoverEnd={e => {}}  
                             >  
-                                <social.icon className={`icon ${social.className}`} onClick={social.onClick} />  
+                                <social.icon className={`icon ${social.className} ${!darkMode === 'dark' ? 'icon_dark' : ''}`} onClick={social.onClick} />  
                             </motion.div>  
                         </motion.div>  
                     ))}  
