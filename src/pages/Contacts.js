@@ -5,7 +5,8 @@ import detectDarkMode from '../utils/detectDarkMode';
 import {useLocalStorage} from "../utils/useLocalStorage";
 
 const Contacts = () => {   
-    const [darkMode, setDarkMode] = useLocalStorage('darkMode', detectDarkMode());
+    const [darkMode, setDarkMode] = useLocalStorage('darkMode', detectDarkMode() === 'dark');
+
     const openTelegramChat = () => {   
         window.open('https://t.me/ssssnya', '_blank');   
     };   
@@ -48,7 +49,8 @@ const Contacts = () => {
                                 onHoverStart={e => {}}   
                                 onHoverEnd={e => {}}  
                             >  
-                                <social.icon className={`icon ${social.className} ${!darkMode === 'dark' ? 'icon_dark' : ''}`} onClick={social.onClick} />  
+                                <social.icon className={`icon ${social.className} ${darkMode ? '' : 'icon_dark'}`} onClick={social.onClick} />
+
                             </motion.div>  
                         </motion.div>  
                     ))}  
