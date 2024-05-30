@@ -96,12 +96,12 @@ body {
 	font-size: 70px; 
 	margin: 70px 40px; 
 	cursor: pointer; 
-	color: #ffffff; 
+	color: var(--icon-color-light);
 	transition: all 0.2s ease;
   } 
   
   .icon_dark {
-  color: #171718;
+	color: var(--icon-color-dark);
   }
 
   .icon:hover {
