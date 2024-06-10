@@ -31,17 +31,21 @@ const Header = () => {
           <p>это мое портфолио.</p>
         </motion.div>
         <motion.a
-          whileHover={{ scale: 1.2 }}
-          custom={3}
-          variants={textAnimation}
-          href="https:vk.com"
-          target="_blank"
-          className="btn">
-          Связаться
-        </motion.a>
+     initial={{ scale: 1, background: "#5c62ec" }}
+     whileHover={{ scale: 1.2, background: "rgba(144, 238, 144, 0.5)" }} 
+     custom={3}
+     variants={textAnimation}
+     transition={{ duration: 0.2 }} 
+     href="https://vk.com"
+     target="_blank"
+     className="btn">
+     Связаться
+   </motion.a>
+   
       </div>
     </motion.header>
   );
 }
 
 export default Header;
+
